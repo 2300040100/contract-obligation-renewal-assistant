@@ -1,0 +1,91 @@
+.policy-manager {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+.policy-header {
+  margin-bottom: 24px;
+}
+
+.policy-header h1 {
+  margin-bottom: 8px;
+}
+
+.policy-header p,
+.policy-card p {
+  color: var(--text-secondary, #777);
+  line-height: 1.6;
+}
+
+.policy-form-card,
+.policy-card {
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 20px;
+  background: var(--card-background, #fff);
+}
+
+.policy-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.policy-form-card input,
+.policy-form-card textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid var(--border-color, #ccc);
+  border-radius: 8px;
+  font: inherit;
+  background: var(--input-background, #fff);
+  color: var(--text-color, #222);
+}
+
+.policy-actions,
+.policy-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.policy-manager button {
+  cursor: pointer;
+  padding: 9px 15px;
+  border-radius: 7px;
+  border: 1px solid var(--border-color, #ccc);
+}
+
+.policy-manager button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.policy-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.policy-card h3 {
+  margin-top: 0;
+}
+
+.policy-card small {
+  color: var(--text-secondary, #777);
+}
+
+@media (max-width: 600px) {
+  .policy-manager {
+    padding: 16px;
+  }
+
+  .policy-card {
+    flex-direction: column;
+  }
+}
