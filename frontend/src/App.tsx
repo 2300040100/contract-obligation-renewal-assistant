@@ -5,7 +5,7 @@ import PolicyManager from "./PolicyManager";
 
 
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 type DeadlineKind = "recurring-monthly" | "ongoing" | "date-unconfirmed" | "overdue" | "due-soon" | "upcoming";
 
